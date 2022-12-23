@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js" integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+   <div class="wrap">
+    <div class="wrap__left">
+        <div class="wrap__left__plus" id="addCard"></div>
+        <div class="card cardNone"></div>
+    </div>
+    <div class="wrap__right">
+        <div class="ATM">
+            <div class="ATM__rowOfCamers">
+                <div class="ATM__rowOfCamers__camera"></div>
+                <div class="ATM__rowOfCamers__secondCamera"></div>
+            </div>
+            <div class="ATM___main">
+                <div class="ATM___main__rowBtn">
+                    <div class="ATM___main__rowBtn__btn"></div>
+                    <div class="ATM___main__rowBtn__btn"></div>
+                    <div class="ATM___main__rowBtn__btn"></div>
+                </div>
+
+
+                <div class="ATM__screen" id="screen">
+                <div class="firstStage">
+                    <div class="ATM__screen__welcome">Welcome, to OstapATM</div>
+                    <div class="ATM__screen__startText" id="ATM__screen__startText">Please, put card in ATM</div>
+                    <input type="text" class="cardPopup__inp" id="checkNumberCard">
+                    <div class="firstStage__btn cardPopup__btn" id="firstStage__btn">Next</div>
+                </div>
+                  <div class="checkPincodeStage">
+                    <div class="ATM__screen__startText" id="SecondStage__name">Please, write your pin-code</div>
+                    <input type="text" class="cardPopup__inp" maxlength="4" id="checkPinCodeCard">
+                    <div class="firstStage__btn cardPopup__btn" id="SecondStage__btn">Next</div>
+                    <div class="ATM__screen__startText" id="forgotPashword">Forget your password???</div>
+                  </div>  
+                  <div class="menuStage">
+                    <div class="menuStage__row">
+                        <div class="menuStage__row__left">
+                             <div class="menuStage__row__btn" id="btnPutMoney">Put Money</div>
+                        </div>
+                        <div class="menuStage__row__right">
+                            <div class="menuStage__row__btn" id="btnTakeMoney">Take Money</div>
+                        </div>
+                    </div>
+                    <div class="menuStage__row">
+                        <div class="menuStage__row__left">
+                            <div class="menuStage__row__btn" id="transferBtn">Transfer Money</div>
+
+                        </div>
+                        <div class="menuStage__row__right">
+                            <div class="menuStage__row__btn" id="btnDetails">Details</div>
+
+                        </div>
+                    </div>
+                    <div class="menuStage__row">
+                        <div class="menuStage__row__left">
+                            <div class="menuStage__row__btn" id="btnChangeLimit">Change Limit</div>
+                        </div>
+                        <div class="menuStage__row__right">
+                            <div class="menuStage__row__btn" id="btnExit">Exit</div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="transferStage">
+                    <div class="transferStage__header">Transfer Money</div>
+                    <div class="transferStage__text">write the number of the card to which you want to withdraw money</div>
+                    <input type="text" class="cardPopup__inp" id="inpCheckTransferNumber">  
+                    <div class="firstStage__btn cardPopup__btn" id="transferCheckBtn">Next</div>  
+                  </div>
+                  <div class="detailsStage">       
+                  </div>
+                  <div class="exitStage">
+                    <div class="exitStage__header">Thank you</div>
+                    <div class="exitStage__header">For visiting our ATM</div>
+                    <div class="exitStage__header">Have a nice day</div>
+                  </div>
+                  <div class="putMoneyStage">
+                    <div class="putMoneyStage__row">
+                       <div class="putMoneyStage__row__left">
+                         <div class="putMoneyStage__item" id="putMoney50">50</div>
+                       </div>
+                       <div class="putMoneyStage__row__right">
+                         <div class="putMoneyStage__item" id="putMoney100">100</div>
+                       </div>
+                    </div>
+                    <div class="putMoneyStage__row">
+                        <div class="putMoneyStage__row__left">
+                            <div class="putMoneyStage__item" id="putMoney200">200</div>
+                          </div>
+                          <div class="putMoneyStage__row__right">
+                            <div class="putMoneyStage__item"id="putMoney500">500</div>
+                          </div>
+                    </div>
+                    <div class="putMoneyStage__row">
+                        <div class="putMoneyStage__row__left">
+                            <div class="putMoneyStage__item" id="putMoney1000">1000</div>
+                          </div>
+                          <div class="putMoneyStage__row__right">
+                            <div class="putMoneyStage__item" id="btnCancel">Cancel</div>
+                          </div>
+                    </div>
+                  </div>
+                  
+                  <div class="changeMoneyStage">
+                    <div class="changeMoneyStage__header">Change Your Limit</div>
+                    <input type="text" class="cardPopup__inp" maxlength="4" id="inpChangeCardLimit">    
+                    <div class="cardPopup__btn" id="btnChangeCardLimit">Sumbit</div>
+                  </div>
+
+                  <div class="transferMoneyStage">
+                   <div class="transferMoneyStage__header">Transfer Money</div>
+                   <div class="transferStage__text">Choose amount</div>
+                   <input type="text" class="cardPopup__inp" maxlength="4" id="inpCheckTransferAmount">  
+                    <div class="firstStage__btn cardPopup__btn" id="transferPlayBtn">Sumbit</div>  
+                  </div>
+
+
+                  <div class="takeMoneyStage">
+                    <div class="putMoneyStage__row">
+                       <div class="putMoneyStage__row__left">
+                         <div class="putMoneyStage__item" id="takeMoney50">50</div>
+                       </div>
+                       <div class="putMoneyStage__row__right">
+                         <div class="putMoneyStage__item" id="takeMoney100">100</div>
+                       </div>
+                    </div>
+                    <div class="putMoneyStage__row">
+                        <div class="putMoneyStage__row__left">
+                            <div class="putMoneyStage__item" id="takeMoney200">200</div>
+                          </div>
+                          <div class="putMoneyStage__row__right">
+                            <div class="putMoneyStage__item"id="takeMoney500">500</div>
+                          </div>
+                    </div>
+                    <div class="putMoneyStage__row">
+                        <div class="putMoneyStage__row__left">
+                            <div class="putMoneyStage__item" id="takeMoney1000">1000</div>
+                          </div>
+                          <div class="putMoneyStage__row__right">
+                            <div class="putMoneyStage__item" id="btnTakeCancel">Cancel</div>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="ATM___main__rowBtn">
+                    <div class="ATM___main__rowBtn__btn"></div>
+                    <div class="ATM___main__rowBtn__btn"></div>
+                    <div class="ATM___main__rowBtn__btn"></div>
+                </div>
+            </div>
+            <div class="ATM__name">OstapATM</div>
+            <div class="ATM__line ATM__line_first"></div>
+            <div class="ATM__placeCard">
+                <div class="ATM__placeCard__place">
+                    <div class="ATM__placeCard__placeIn">
+                        <div class="ATM__placeCard__placeIn__card" id="cardInATM">
+                            <div class="ATM__placeCard__placeIn__card__name">worl</div>
+                            <div class="ATM__placeCard__placeIn__card__img"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ATM__line"></div>
+            <div class="ATM__moneyPlace">
+                <div class="ATM__moneyPlace__item"></div>
+            </div>
+        </div>
+    </div>
+   </div> 
+   <div class="cardPopup" id="cardPopup">
+    <div class="cardPopup__header">New Card</div>
+    <div class="cardPopup__nameOption">Write your name and surname</div>
+    <input type="text" class="cardPopup__inp" placeholder="" id="nameAndSurname">
+    <div class="cardPopup__nameOption">Write pin-code</div>
+    <input type="password" class="cardPopup__inp" maxlength="4" placeholder="" id="pincode">
+    <div class="cardPopup__nameOption">Write your's pet name</div>
+    <input type="text" class="cardPopup__inp" placeholder="" id="favouritePet">
+    <div class="cardPopup__btn" id="createCardBtn">Sumbit</div>
+   </div>
+   <div class="pincodePopup" id="pincodePopup">
+    <div class="cardPopup__header">Forget your password???</div>
+    <div class="cardPopup__nameOption" id="changePincodeText">Write your pet name wich you wrote in card information</div>
+    <input type="text" class="cardPopup__inp" placeholder="" id="checkCardpetname">
+    <input type="text" class="cardPopup__inp" placeholder="" maxlength="4" id="checkCardNewPincode">
+    <div class="cardPopup__btn" id="checkCardpetnameBtn">Sumbit</div>
+    <div class="cardPopup__btn" id="changePincodeBtn">Sumbit</div>
+   </div>
+<script src="main.js"></script>   
+<script src="https://kit.fontawesome.com/2a55249aa5.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

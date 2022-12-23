@@ -1,0 +1,967 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrap__left {
+  width: 30%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.wrap__left__plus {
+  width: 66px;
+  height: 66px;
+  background-image: url(../img/plus.png);
+  background-size: cover;
+  cursor: pointer;
+}
+
+.card {
+  width: 407px;
+  height: 217px;
+  background: #0E0E0E;
+  border-radius: 10px;
+  margin: 30px 0;
+  padding: 0 20px;
+  padding-top: 20px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.card:hover {
+  -webkit-box-shadow: 0 0 20px #333;
+          box-shadow: 0 0 20px #333;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.card__row {
+  width: 100%;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__row__cardName {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.card__row__slash {
+  margin: 0 10px;
+  width: 1.5px;
+  height: 30px;
+  background: #373735;
+}
+
+.card__row__place {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #5B5855;
+}
+
+.card__row__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: -5px;
+  color: #605F5B;
+  margin-left: 60px;
+}
+
+.card__row_middle {
+  margin: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card__row__signalImg {
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/signal.png);
+  background-size: cover;
+}
+
+.card__row__number {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 28px;
+  color: #292828;
+}
+
+.card__row_middle__left {
+  width: 30%;
+  height: 100%;
+}
+
+.card__row_middle__right {
+  width: 70%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.card__row__name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #292828;
+}
+
+.card__row__date {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 28px;
+  margin: 0 15px;
+  color: #292828;
+}
+
+.card__row:last-child {
+  margin-top: -20px;
+}
+
+.card__row__masterCardImg {
+  width: 90px;
+  height: 55px;
+  background-image: url(../img/masterCard.png);
+  background-size: cover;
+}
+
+.wrap__right {
+  width: 70%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.ATM {
+  width: 748px;
+  height: 856px;
+  margin-top: 118px;
+  background: #C0C0C0;
+  border: 10px solid #000000;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 10px;
+  -webkit-box-shadow: 0 0 20px #333;
+          box-shadow: 0 0 20px #333;
+}
+
+.ATM__rowOfCamers {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ATM__rowOfCamers__camera {
+  width: 45px;
+  height: 45px;
+  background-image: url(../img/ATMCamera.png);
+  background-size: cover;
+}
+
+.ATM__rowOfCamers__secondCamera {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: red;
+  margin-left: 10px;
+  -webkit-animation: 0.5s infinite alternate loading;
+          animation: 0.5s infinite alternate loading;
+}
+
+@-webkit-keyframes loading {
+  to {
+    background-color: green;
+  }
+}
+
+@keyframes loading {
+  to {
+    background-color: green;
+  }
+}
+.ATM___main {
+  width: 100%;
+  height: 476px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.ATM___main__rowBtn {
+  width: 40px;
+  height: 342px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ATM___main__rowBtn__btn {
+  width: 40px;
+  height: 40px;
+  margin: 38px 0;
+  background: #C0C0C0;
+  border: 3px solid #000000;
+}
+
+.ATM__screen {
+  width: 523px;
+  height: 476px;
+  background: #ADD8E6;
+  border: 15px solid #000000;
+  border-radius: 10px;
+}
+
+.ATM__name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 28px;
+  margin-top: 15px;
+  color: #000000;
+}
+
+.ATM__line {
+  width: 729px;
+  height: 28px;
+  background: #000000;
+}
+
+.ATM__line_first {
+  margin-top: 10px;
+}
+
+.ATM__placeCard {
+  height: 70px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ATM__placeCard__place {
+  width: 138px;
+  height: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #7DE11C;
+  border: 5px solid #000000;
+  -webkit-animation: 0.5s infinite alternate ATM;
+          animation: 0.5s infinite alternate ATM;
+}
+
+.ATM__placeCard__placeIn {
+  width: 121.55px;
+  height: 30px;
+  background: #808080;
+  border: 5px solid #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@-webkit-keyframes ATM {
+  to {
+    background-color: #808080;
+  }
+}
+
+@keyframes ATM {
+  to {
+    background-color: #808080;
+  }
+}
+.ATM__placeCard__placeIn__card {
+  width: 90px;
+  height: 40px;
+  margin-top: -5px;
+  background: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  overflow: hidden;
+  border: 5px solid #000000;
+  padding-top: 3px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.ATM__placeCard__placeIn__card__name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: #605F5B;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.ATM__placeCard__placeIn__card__img {
+  width: 21px;
+  height: 13px;
+  left: 1009px;
+  top: 888px;
+  background: url(../img/masterCard.png);
+  background-size: cover;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.ATM__moneyPlace {
+  width: 100%;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ATM__moneyPlace__item {
+  width: 237px;
+  height: 38px;
+  background: #808080;
+  border: 7px solid #000000;
+}
+
+#cardInATM {
+  display: none;
+}
+
+.ATM__screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ATM__screen__startText {
+  color: #fff;
+  font-size: 30px;
+}
+
+.cardPopup {
+  width: 370px;
+  height: 470px;
+  position: absolute;
+  background-color: #fff;
+  left: 50%;
+  margin-top: -200px;
+  margin-left: -150px;
+  top: 50%;
+  padding: 0 30px;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 7px;
+  padding-top: 30px;
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+}
+
+.pincodePopup {
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  background-color: #fff;
+  left: 50%;
+  margin-top: -200px;
+  margin-left: -150px;
+  top: 50%;
+  padding: 0 30px;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 7px;
+  padding-top: 30px;
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+}
+
+.cardPopup__header {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #000;
+}
+
+.cardPopup__nameOption {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+  color: #000;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.cardPopup__inp {
+  width: 200px;
+  height: 30px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  padding-left: 30px;
+}
+
+.cardPopup__btn {
+  width: 120px;
+  height: 35px;
+  cursor: pointer;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 7px;
+  background-color: #333;
+  margin-top: 40px;
+}
+
+.card__row__endLeft {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__row__endRight {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.cardNone {
+  display: none;
+}
+
+.ATM__screen__welcome {
+  font-size: 35px;
+  color: #fff;
+  font-weight: 600;
+  display: none;
+}
+
+#screen {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#checkNumberCard {
+  margin-top: 30px;
+  display: none;
+}
+
+.firstStage {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#firstStage__btn {
+  display: none;
+}
+
+.checkPincodeStage {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#SecondStage__name {
+  margin-bottom: 30px;
+}
+
+#SecondStage__btn {
+  margin-bottom: 30px;
+}
+
+#forgotPashword {
+  cursor: pointer;
+}
+
+#checkCardpetname {
+  margin-top: 10px;
+}
+
+#changePincodeBtn {
+  display: none;
+}
+
+#checkCardNewPincode {
+  display: none;
+}
+
+.menuStage {
+  width: 100%;
+  height: 100%;
+  padding-top: 40px;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menuStage__row {
+  width: 100%;
+  height: 60px;
+  margin: 30px 0;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menuStage__row__left {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menuStage__row__right {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.firstStage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menuStage__row__btn {
+  width: 140px;
+  height: 40px;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.menuStage__row__btn:hover {
+  background-color: #fff;
+  color: #ADD8E6;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.putMoneyStage {
+  width: 100%;
+  height: 100%;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.putMoneyStage__item {
+  width: 100px;
+  height: 40px;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+.putMoneyStage__item:hover {
+  background-color: #fff;
+  color: #ADD8E6;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.putMoneyStage__row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 30px 0;
+  padding: 0 30px;
+}
+
+.putMoneyStage__row__left {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.putMoneyStage__row__right {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.changeMoneyStage {
+  width: 100%;
+  height: 100%;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#btnChangeCardLimit {
+  margin-top: 20px;
+}
+
+.changeMoneyStage__header {
+  font-size: 35px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.exitStage {
+  width: 100%;
+  height: 100%;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.exitStage__header {
+  color: #fff;
+  font-size: 35px;
+}
+
+.takeMoneyStage {
+  width: 100%;
+  height: 100%;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.detailsStage {
+  width: 100%;
+  height: 100%;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.detailsStage__header {
+  font-size: 35px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.detailsStage__p {
+  color: #fff;
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+#btnDetailsCancel {
+  margin-top: 10px;
+  width: 120px;
+}
+
+.transferStage {
+  width: 100%;
+  height: 100%;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 20px;
+}
+
+.transferStage__header {
+  font-size: 35px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.transferStage__text {
+  color: #fff;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.transferMoneyStage__header {
+  font-size: 35px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.transferMoneyStage {
+  width: 100%;
+  height: 100%;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
